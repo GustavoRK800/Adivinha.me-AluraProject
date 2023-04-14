@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #400D51;
+    --primary-color: #FFFF00;
+    --shadow-color: rgba(0,0,0, 0.5);
+    --bg-play-0: #C147E9;
+    --bg-play-1: #810CA8;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 5.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 3em;
+    margin: 25px 0;
+}
+
+h3 span{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.mensagem{
+    margin: 3em 0;
+}
+
+.mensagem div{
+    font-size: 2.5em;
+    margin: 40px 0;
+}
+
+.box{
+    border: 3px dotted var(--primary-color);
+    font-size: 5em;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px 10px var(--shadow-color);
+}
+
+.mensagem .italico {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.ARROW{
+    margin: 0 15px;
+}
+
+#jogar-novamente {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 15px;
+    border: none;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: var(--bg-play-1);
+    border-radius: 50px;
+    box-shadow: 10px 10px 50px 10px var(--shadow-color);
+    transition: 0.3s;
+}
+
+#jogar-novamente:hover {
+    background-color: var(--bg-play-0); 
+}
